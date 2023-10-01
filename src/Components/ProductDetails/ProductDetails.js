@@ -8,6 +8,7 @@ import { addToCart } from '../../Store/Slices/CartSlice'
 
 function ProductDetails() {
   const [productDetails, setProductDetails] = useState([])
+  const [quantity, setQuentity] = useState(1)
   const [Images, setImages] = useState([])
   const params = useParams()
   const navigate = useNavigate()
@@ -29,9 +30,13 @@ function ProductDetails() {
   }, [])
 
   const handleButtonClick = (id) => {
-    dispatch(addToCart({...productDetails,quantity:1}))
+    dispatch(addToCart({...productDetails,quantity:quantity}))
     navigate(`/Cart?id=${id}`)
   };
+
+  const handelQuantity = (event) => {
+    setQuentity(Number(event.target.value))
+  }
 
   return (
     <div className="container">
@@ -42,11 +47,11 @@ function ProductDetails() {
             <img src={productDetails.thumbnail} className="h-100 w-100 rounded-2"/>
           </div>
           <br /><br />
-          <div className="slider-image row row-cols-3 h-25">
+          <div className="d-flex justify-content-between">
             {Images.map((image) => {
               return (
                 <div className="col-3 mx-3" width="100">
-                  <img src={image} className="h-100 w-100 rounded-2"/>
+                  <img src={image} className="h-100 w-100 rounded-2" height={200} width={200}/>
                 </div>
               )
             })}
@@ -78,8 +83,8 @@ function ProductDetails() {
           <p className="text bg-light w-50 p-2"><strong className="text-uppercase">Brand: </strong>{productDetails.brand}</p>
           <hr />
           <div className="row justify-content-evenly">
-            <input type="number" id="typeNumber" min={1} max={10} className="col-5 form-control w-50" placeholder="Quantity"/>
-            <p className="col-5 mb-0">only <span className="text-warning">{productDetails.stock} Items </span>Left! <br />Don't Miss It</p>
+            <input type="number" id="typeNumber" value={quantity} name="quantity" min={1} max={productDetails.stock} className="col-5 form-control w-50" placeholder="Quantity" onChange={(event) => handelQuantity(event)}/>
+            <p className="col-5 mb-0">Only <span className="text-warning">{productDetails.stock} Items </span>Left! <br />Don't Miss It</p>
           </div>
           <div className="row mt-4 justify-content-evenly">
             <button type="button" className="col-4 btn btn-success rounded-5 py-2" onClick={() => redirectToBuy(productDetails.id)}>Buy Now</button>

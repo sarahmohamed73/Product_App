@@ -23,9 +23,9 @@ function Cart() {
   const dispatch = useDispatch()
   return (
     <>
-      <div className="container">
+      <div className="container" style={{height: '100vh'}}>
         {counter === 0 ? 
-        <div>
+        <div className='d-flex flex-column justify-content-center align-items-center '>
           <img src={cartImage} className="" style={{width: '40%'}}/>
           <h4>You Cart Is Empty!</h4>
           <NavLink to='/' className="text-success">&larr; Back to Home Page and Continue Shopping</NavLink>
@@ -35,10 +35,10 @@ function Cart() {
           <table className="table">
             <thead>
               <tr className="table-head">
-                <th className="border-0">Description</th>
-                <th className="border-0">Quantity</th>
-                <th className="border-0">Remove</th>
-                <th className="border-0">Price</th>
+                <th className="border-0 text-start ">Description</th>
+                <th className="border-0 text-start ">Quantity</th>
+                <th className="border-0 text-start ">Remove</th>
+                <th className="border-0 text-start ">Price</th>
               </tr>
             </thead>
             <tbody className="products">
@@ -46,7 +46,7 @@ function Cart() {
               return (
                 <>
                   <tr className='border border-1 border-bottom-0 border-start-0 border-end-0'>
-                    <th class="border-0">
+                    <th class="border-0 text-start ">
                       <div class="align-items-center d-flex">
                         <img src={product.thumbnail} width="100" className="me-4"></img>
                         <div class="text-start ml-3 mt-3">
@@ -55,19 +55,19 @@ function Cart() {
                         </div>
                       </div>
                     </th>
-                    <td class="align-middle border-0">
-                      <div class="d-flex align-items-center justify-content-center px-3">
+                    <td class="align-middle border-0 text-start ">
+                      <div class="d-flex align-items-center justify-content-start text-start ">
                           <button type="button" class="btn btn-success px-3 h-100 rounded-0" onClick={() => dispatch(incrementQuantity(product.id))}>+</button>
                           <h4 className="px-3 py-1 h-100 m-0">{product.quantity}</h4>
                           <button type="button" class="btn btn-secondary px-3 h-100 rounded-0" onClick={() => dispatch(decrementQuantity(product.id))}>-</button>
                       </div>
                     </td>
-                    <td class="align-middle border-0">
+                    <td class="align-middle border-0 text-start ">
                       <a className="text-secondary w-100 text-center" onClick={() => dispatch(removeProduct(product.id))}>
                         <FontAwesomeIcon icon={faTrash} />
                       </a>
                     </td>
-                    <td class="align-middle border-0">
+                    <td class="align-middle border-0 text-start ">
                       ${product.price * product.quantity}
                     </td>
                   </tr>
