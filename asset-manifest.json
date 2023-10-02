@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Product_App/static/css/main.7ef74cdf.css",
+    "main.js": "/Product_App/static/js/main.8b193281.js",
+    "static/js/587.c1c3e28d.chunk.js": "/Product_App/static/js/587.c1c3e28d.chunk.js",
+    "static/js/717.c0368f7d.chunk.js": "/Product_App/static/js/717.c0368f7d.chunk.js",
+    "static/css/976.31d6cfe0.chunk.css": "/Product_App/static/css/976.31d6cfe0.chunk.css",
+    "static/js/976.5b074b97.chunk.js": "/Product_App/static/js/976.5b074b97.chunk.js",
+    "static/js/310.bf4a2a22.chunk.js": "/Product_App/static/js/310.bf4a2a22.chunk.js",
+    "static/js/300.ad9c6f29.chunk.js": "/Product_App/static/js/300.ad9c6f29.chunk.js",
+    "static/js/482.7bf154c6.chunk.js": "/Product_App/static/js/482.7bf154c6.chunk.js",
+    "static/js/926.5fe3d1fa.chunk.js": "/Product_App/static/js/926.5fe3d1fa.chunk.js",
+    "static/js/787.9593ae11.chunk.js": "/Product_App/static/js/787.9593ae11.chunk.js",
+    "static/js/807.979e3172.chunk.js": "/Product_App/static/js/807.979e3172.chunk.js",
+    "static/media/empty-cart-4816550-4004141.webp": "/Product_App/static/media/empty-cart-4816550-4004141.e95e08d9353c579bfe57.webp",
+    "index.html": "/Product_App/index.html",
+    "main.7ef74cdf.css.map": "/Product_App/static/css/main.7ef74cdf.css.map",
+    "main.8b193281.js.map": "/Product_App/static/js/main.8b193281.js.map",
+    "587.c1c3e28d.chunk.js.map": "/Product_App/static/js/587.c1c3e28d.chunk.js.map",
+    "717.c0368f7d.chunk.js.map": "/Product_App/static/js/717.c0368f7d.chunk.js.map",
+    "976.5b074b97.chunk.js.map": "/Product_App/static/js/976.5b074b97.chunk.js.map",
+    "310.bf4a2a22.chunk.js.map": "/Product_App/static/js/310.bf4a2a22.chunk.js.map",
+    "300.ad9c6f29.chunk.js.map": "/Product_App/static/js/300.ad9c6f29.chunk.js.map",
+    "482.7bf154c6.chunk.js.map": "/Product_App/static/js/482.7bf154c6.chunk.js.map",
+    "926.5fe3d1fa.chunk.js.map": "/Product_App/static/js/926.5fe3d1fa.chunk.js.map",
+    "787.9593ae11.chunk.js.map": "/Product_App/static/js/787.9593ae11.chunk.js.map",
+    "807.979e3172.chunk.js.map": "/Product_App/static/js/807.979e3172.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ef74cdf.css",
+    "static/js/main.8b193281.js"
+  ]
+}

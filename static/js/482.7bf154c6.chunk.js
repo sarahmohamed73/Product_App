@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkproduct_app=self.webpackChunkproduct_app||[]).push([[482],{3482:function(e,n,t){t.r(n);t(2791);var c=t(184);n.default=function(){return(0,c.jsx)("div",{className:"container d-flex justify-content-center",style:{height:"100vh"},children:(0,c.jsx)("h1",{children:"Login"})})}}}]);
+//# sourceMappingURL=482.7bf154c6.chunk.js.map

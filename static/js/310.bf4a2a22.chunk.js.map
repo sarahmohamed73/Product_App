@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/310.bf4a2a22.chunk.js","mappings":"2IAQA,UANA,WACE,OACEA,EAAAA,EAAAA,KAAA,MAAAC,SAAI,WAER,C","sources":["Pages/BuyNow.js"],"sourcesContent":["import React from \"react\";\r\n\r\nfunction BuyNow() {\r\n  return (\r\n    <h1>Buy Now</h1>\r\n  )\r\n}\r\n\r\nexport default BuyNow"],"names":["_jsx","children"],"sourceRoot":""}

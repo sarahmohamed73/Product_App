@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkproduct_app=self.webpackChunkproduct_app||[]).push([[310],{7310:function(u,p,c){c.r(p);c(2791);var e=c(184);p.default=function(){return(0,e.jsx)("h1",{children:"Buy Now"})}}}]);
+//# sourceMappingURL=310.bf4a2a22.chunk.js.map
