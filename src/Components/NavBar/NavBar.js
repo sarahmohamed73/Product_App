@@ -12,7 +12,7 @@ import { LanguageContext } from "./../../Context/Language"
 import { ThemeContext } from "./../../Context/Theme"
 
 function NavBar() {
-  const counter = useSelector((state) => state.cart.counter)
+  const counter = useSelector((state) => state.cart.counter) 
   const { contextLanguage, setContextLanguage } = useContext(LanguageContext)
   const { contextTheme, setContextTheme } = useContext(ThemeContext)
   return (
@@ -33,8 +33,9 @@ function NavBar() {
               </Dropdown.Toggle>
 
               <Dropdown.Menu className='ms-2'>
-                <Dropdown.Item onClick={() => setContextLanguage("AR")}>AR</Dropdown.Item>
-                <Dropdown.Item onClick={() => setContextLanguage("EN")}>EN</Dropdown.Item>
+                <Dropdown.Item onClick={() => setContextLanguage("ar")}>AR</Dropdown.Item>
+                <Dropdown.Item onClick={() => setContextLanguage("en")}>EN</Dropdown.Item>
+                <Dropdown.Item onClick={() => setContextLanguage("fr")}>FR</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
             <NavLink className='navigations nav-link ms-3 fs-4 text-success'>

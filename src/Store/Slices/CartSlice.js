@@ -13,7 +13,7 @@ const cart = createSlice({
     addToCart: (state, action) => {
       const product = state.cart.find((product) => product.id === action.payload.id)
       if(product) {
-        product.quantity = product.quantity + action.payload.quantity
+        product.quantity = product.quantity + 1
       } else {
         state.cart.push({...action.payload})
         state.counter++

@@ -18,8 +18,8 @@ function ProductList() {
     navigate(`/Details/${id}`)
   }
 
-  const redirectToCart = (id) => {
-    navigate(`/Cart?id=${id}`)
+  const redirectToCart = () => {
+    navigate(`/Cart`)
   }
 
   return (
@@ -27,7 +27,7 @@ function ProductList() {
       {productList.map((product) => {
         return (
           <div className="col d-flex justify-content-center align-items-center" key={product.id}>
-            <ProductCard product={product} navigateDetail={(id) => redirectToDetails(id)} navigateCart={(id) => redirectToCart(id)}/>
+            <ProductCard product={product} navigateDetail={(id) => redirectToDetails(id)} navigateCart={() => redirectToCart()}/>
           </div>
         );
       })}
